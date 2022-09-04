@@ -224,3 +224,41 @@ a.in img {
 .primary-heading.f-60 {
     font-size: 4.28rem;
 }
+.timeline {
+    display: flex;
+    align-items: self-start;
+    gap: 30px;
+    max-height: 100px;
+}
+.timeline h2 {
+    font-size: 2.85rem;
+    color: #00FFFF;
+    margin-top: -12px;
+}
+.time-line-txt {
+    flex: 0 34%;
+    margin-top:-5px
+}
+.time-line-txt h4, .main-heading {
+    font-size: 1.71rem;
+    color: #00FFFF;
+}
+.timeline.justify-content-start img.line {
+    transform: rotate(180deg);
+}
+.contact {
+    background: url(../images/line-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    padding-top: 32rem !important;
+}
+.contact ul {
+    font-weight: 200;
+    list-style: disc;
+    padding-left: 20px;
+    line-height: 24px;
+}
+.contact ul li {
+    margin-bottom: 10px;
+}
