@@ -10,6 +10,8 @@ main {
 section {
     position: relative;
     width: 100%;
+}
+.about-us section {
     overflow: hidden;
 }
   
