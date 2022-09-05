@@ -96,6 +96,10 @@ header {
     font-weight: 600;
     padding: 0 23px;
 }
+.nav-items li a.start:hover, .primary-btn:hover {
+    background:  linear-gradient(180deg, #00FFFF 0%, rgb(255 255 255 / 75%) 100%);
+    color: #fff;
+}
 .b-heading {
     font-size: 4.28rem;
 }
@@ -264,4 +268,39 @@ a.in img {
 }
 .contact ul li {
     margin-bottom: 10px;
+}
+.step {
+    background: url(../images/line-bg2.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    padding-top: 28rem !important;
+}
+.step img.mx-auto {
+    margin-top: -123px;
+}
+.step-list ul {
+    font-weight: 200;
+    margin: 0;
+}
+.step-list ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.step-list ul li:before {
+    content: '';
+    width: 8px;
+    height: 4px;
+    background: #00FFFF;
+}
+.tr-btn {
+    position: absolute;
+    right: 0;
+    left: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 98px;
 }
