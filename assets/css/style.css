@@ -1,7 +1,7 @@
 html {
     font-size: 14px;
     -webkit-font-smoothing: antialiased;
-  }
+}
   
 main {
     overflow: hidden;
@@ -57,6 +57,11 @@ p {
     line-height: 24px;
 }
 
+.wrapper {
+    height: 100%;
+    overflow: hidden;
+}
+
 .container {
     max-width: 1440px;
 }
@@ -67,7 +72,7 @@ p {
 
 header {
     position: relative;
-    z-index: 10;
+    z-index: 100;
 }
 
 .logo-area img {
@@ -266,10 +271,15 @@ a.in img {
     gap: 30px;
     max-height: 100px;
 }
+.time-date {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: -12px;
+}
 .timeline h2 {
     font-size: 2.85rem;
     color: #00FFFF;
-    margin-top: -12px;
 }
 .time-line-txt {
     flex: 0 34%;
@@ -339,4 +349,287 @@ a.in img {
     background-repeat: no-repeat;
     min-height: 500px;
     padding-top: 21rem !important;
+}
+.mb-show {
+    display: none;
+}
+.mb-hide {
+    display: block;
+}
+.mobile-menu {
+    display: none;
+}
+@media (max-width: 1250px) {
+    html {
+        font-size: 13px;
+    }
+    .power-txt {
+        max-width: 55%;
+    }
+    .graph-img {
+        top: 96px;
+    }
+    .human-img {
+        margin-top: -168px;
+        margin-left: 0;
+    }
+    .timeline {
+        max-height: unset;
+        margin-bottom: 31px;
+    }
+}
+@media (max-width: 1000px) {
+    .graph-img {
+        top: 112px;
+        width: 68%;
+    }
+    .power-txt {
+        max-width: 67%;
+    }
+    .profit p {
+        width: 100%;
+    }
+}
+@media (max-width: 820px) {
+    html {
+        font-size: 12px;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        line-height: 1;
+    }
+    .human-img {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .mobile-menu {
+        display: flex;
+        gap: 30px;
+        align-items: flex-start;
+    }
+    .menu-icon {
+        margin-top: 5px;
+    }
+    .menu-area {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #03031C;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 7rem 0;
+    }
+    .menu-area a img.logo {
+        width: 200px;
+    }
+    .menu-area ul {
+        text-align: center;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    .menu-area ul li {
+        margin-bottom: 25px;
+    }
+    .menu-area ul li:last-child {
+        margin-bottom: 0;
+    }
+    .menu-area ul li a {
+        color:#00FFFF;
+    }
+    .menu-area ul li ul.sub-menu {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .menu-area ul li ul.sub-menu li {
+        margin-bottom: 10px;
+    }
+    .menu-area ul li ul.sub-menu li a {
+        color: #fff;
+    }
+    .menu-area ul li ul.sub-menu li:last-child {
+        margin-bottom: 0;
+    }
+    .menu-area .primary-btn {
+        font-size: 18px;
+        padding: 0 35px;
+    }
+    a.cross {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+}
+@media (max-width: 768px) {
+    section {
+        text-align: center;
+    }
+    .power .container {
+        padding: 0;
+    }
+    .power-txt {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 27px;
+        padding: 0 15px;
+    }
+    .graph-img {
+        position: unset;
+        width: 100%;
+        margin-top: -36px;
+        margin-bottom: -68px;
+    }
+    .power a strong {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    .power {
+        background-position: left bottom 231px;
+    }
+    .who .row, .risk .row {
+        flex-direction: column-reverse;
+    }
+    .who ul {
+        margin: 0 auto;
+        text-align: left;
+    }
+    .who .primary-btn {
+        margin: 0 auto;
+    }
+    .who {
+        padding: 0;
+    }
+    .human-img {
+        margin-top: -100px;
+    }
+    .who .primary-heading {
+        flex-direction: column;
+    }
+    .who .primary-heading span {
+        font-size: 5rem;
+    }
+    .profit p {
+        width: 100%;
+    }
+    .slider-arrow {
+        justify-content: center;
+        margin-bottom: 32px;
+        margin-top: 25px !important;
+    }
+    .profit .container {
+        padding: 0;
+    }
+    img.bg-img {
+        width: 150%;
+        max-width: 150%;
+    }
+    .slick-initialized .slick-slide {
+        overflow: hidden;
+    }
+    .sl-2 {
+        direction: rtl;
+    }
+    .profit p {
+        padding: 0 10px;
+    }
+    .video {
+        padding-top: 6rem;
+    }
+    .video p {
+        width: 100%;
+    }
+    .awards-area {
+        padding: 0 15px;
+    }
+    footer {
+        text-align: center;
+        padding: 8rem 0 0;
+    }
+    footer .col-md-4.d-flex {
+        justify-content: center;
+    }
+    footer .row {
+        gap: 40px;
+    }
+    .footer-address img {
+        display: none;
+    }
+    .footer-address ul li {
+        margin-bottom: 0;
+        justify-content: center;
+    }
+    .footer-address ul li:last-child {
+        margin-top: 4rem;
+    }
+    .mb-show {
+        display: block;
+    }
+    .mb-hide {
+        display: none;
+    }
+    .p-d-0 {
+        padding: 0 !important;
+    }
+    .see a.primary-btn {
+        width: 100%;
+        font-size: 1.33rem;
+    }
+    .tr-btn {
+        right: 0;
+        left: 0;
+        bottom: 64px;
+    }
+    .row.r-dir {
+        flex-direction: column-reverse;
+    }
+    .step {
+        padding-top: 17rem !important;
+    }
+    .step img.mx-auto {
+        margin-top: 44px;
+        width: calc(100% + 86px);
+        margin-left: -28px !important;
+        max-width: calc(100% + 76px);
+    }
+    img.lev {
+        width: calc(100% + 152px);
+        margin-left: -72px !important;
+        max-width: calc(100% + 152px);
+    }
+    .cost {
+        padding-top: 11rem !important;
+    }
+    .timeline {
+        align-items: end;
+        text-align: left;
+        flex-direction: column;
+    }
+    .timeline:nth-child(2n) {
+        align-items: flex-start;
+        flex-direction: column-reverse;
+    }
+    .contact {
+        background: url(../images/line-bg-mb.svg);
+        background-size: 100%;
+        padding-top: 13rem !important;
+        background-repeat: no-repeat;
+    }
+}
+@media (max-width: 550px) {
+    .b-heading, .primary-heading, .primary-heading.f-60 {
+        font-size: 2.416rem;
+    }
+    .power a {
+        font-size: 1.28rem;
+    }
 }
