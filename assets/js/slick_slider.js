@@ -7,8 +7,10 @@ $(document).ready(function(){
 
 	$(".lazy").slick({
     // infinite: true,
-    speed: 300,
+    speed: 700,
     slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
     prevArrow: $('.prev'),
     nextArrow: $('.next')
     });

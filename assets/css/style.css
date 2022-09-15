@@ -664,4 +664,7 @@ a.in img {
     .power a {
         font-size: 1.28rem;
     }
+    img.fl-img {
+        height: 290px;
+    }
 }
